@@ -1,0 +1,92 @@
+
+body {
+  background: #FFFFFF; /*white
+  /*background-image: linear-gradient(to bottom, rgba(178,34,34,1), rgba(178,34,34,0));*/
+  color: #000000;
+  margin-top: 5rem;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+ul {
+  margin: 0;
+}
+
+
+.bg-steel {
+  background-color: #B22222;/*fire_brick
+}
+
+/*text on navigation bar like home, login etc.*/
+.site-header .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
+
+/*when you hover over the navigation bar's text like home login etc.*/
+.site-header .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #000000;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+

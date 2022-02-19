@@ -1,0 +1,25 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="ps-section__content">
+                <div class="row">
+                    {% for query in user_posts %}
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                            <div class="ps-product--fashion">
+                                    <div class="ps-product__thumbnail"><a class="ps-product__overlay" href="#"></a>
+                                        <img class="lazy" src="{% if query.image %}{{ query.image.url }}{% endif %}"  width="200" height="400S" alt="">
+                                        <ul class="ps-product__actions">
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="ps-product__content"><a class="ps-product__title" href="#">{{ query.bookname }}</a>
+                                        <p class="ps-product__price">${{ query.price }}</p>
+                                    </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                </div>
+            </div>
+   
+{% endblock content %}

@@ -1,0 +1,41 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+<title>Search</title>
+{% block content %}
+    <div class="ps-section pt-80 pb-30">
+        <div class="ps-container">
+            <div class="ps-section__header text-center">
+                <h2 class="ps-section__title">Search Results for {{searh_query}}</h2>
+                
+            </div>
+             <!-- products  -->
+            <div class="ps-section__content">
+                <div class="row">
+                    {% for query in query_result %}
+                        <div class="col-lg-6 col-md-3 col-sm-5 col-xs-12 ">
+                            <div class="ps-product--fashion">
+                                    <div class="ps-product__thumbnail"><a class="ps-product__overlay" href="{% url 'post-detail' query.id %}"></a>
+                                        <img class="lazy" src="{% if query.image %}{{ query.image.url }}{% endif %}"  width="350" height="500" alt="">
+                                        <ul class="ps-product__actions">
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="ps-product__content"><a class="ps-product__title" href="{% url 'post-detail' query.id %}">{{ query.bookname }}</a>
+                                        <p class="ps-product__price">${{ query.price }}</p>
+                                    </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
